@@ -76,7 +76,7 @@ Nmap was used to scan all TCP ports:
 nmap -p- 10.10.1.22
 ```
 
-The `-p-` option instructs Nmap to scan all 65,535 TCP ports instead of only the default common ports.
+The `-p-` option instructs Nmap to scan all 65,535 TCP ports instead of only the default common ports
 
 ### Result
 
@@ -91,9 +91,10 @@ This information provided the foundation for more targeted service enumeration.
 - Attack-surface identification
 - Interpreting Nmap results
 
-### Screenshot
+### Evidence
 
 <img width="431" height="562" alt="Figure 1  Nmap full TCP port scan identifying open services on target 10 10 1 22" src="https://github.com/user-attachments/assets/8170dad5-52b4-46cc-b62b-72670107ba03" />
+
 Figure 1. Nmap full TCP port scan identifying open services on target 10.10.1.22
 
 ## 2. Web Service Version Detection
@@ -127,10 +128,11 @@ Identifying software versions is important because it allows a penetration teste
 - Targeted Nmap scanning
 - Technology identification
 
-### Screenshot
+### Evidence
 
 <img width="635" height="201" alt="Figure 2  Nmap service version detection identifying Apache HTTP Server 2 4 46" src="https://github.com/user-attachments/assets/65852042-899c-470d-8ec7-23c9873d7f9f" />
 
+Figure 2. Nmap service version detection identifying Apache HTTP Server 2.4.46
 
 ## 3. Operating System Fingerprinting
 
@@ -166,6 +168,7 @@ The result was fingerprint-based and Nmap noted that the result may not have bee
 
 <img width="628" height="437" alt="Figure 3  Nmap operating system fingerprinting indicating Windows Server 2012 R2" src="https://github.com/user-attachments/assets/5963ae1d-f144-48df-bb87-6be086acb15d" />
 
+Figure 3. Nmap operating system fingerprinting indicating Windows Server 2012 R2
 
 ## 4. Content Management System Identification
 
@@ -201,6 +204,7 @@ This demonstrated how application-level information can be gathered using target
 
 <img width="628" height="289" alt="Figure 4  Nmap NSE enumeration identifying the Sitemagic CMS platform" src="https://github.com/user-attachments/assets/d6296b07-3b05-4526-8fda-6d902e9ebe48" />
 
+Figure 4. Nmap NSE enumeration identifying the Sitemagic CMS platform
 
 ## 5. SMB and Active Directory Enumeration
 
@@ -237,6 +241,7 @@ The Active Directory domain information became particularly useful during the cr
 
 <img width="628" height="422" alt="Figure 5  SMB enumeration identifying the CyberQ local Active Directory domain" src="https://github.com/user-attachments/assets/09abba29-b08e-44be-b2a2-23fe369b3e9e" />
 
+Figure 5. SMB enumeration identifying the CyberQ.local Active Directory domain
 
 # 6. Kerberos AS-REP Roasting
 
@@ -280,19 +285,13 @@ The attack demonstrated how an Active Directory account configured without Kerbe
 ### Screenshot 1
 
 <img width="628" height="161" alt="Figure 6  Impacket GetNPUsers retrieving an AS-REP hash from the target domain" src="https://github.com/user-attachments/assets/71cba542-c9bd-442d-b4b6-0d8d37128d03" />
-> Impacket GetNPUsers retrieving an AS-REP hash from an account without Kerberos pre-authentication.
 
-### Screenshot 2
+Figure 6.1. Impacket GetNPUsers retrieving an AS-REP hash from the CyberQ.local Active Directory domain
 
-ADD SCREENSHOT HERE
+<img width="503" height="190" alt="Screenshot 2026-09-11 at 15 26 58" src="https://github.com/user-attachments/assets/7bb351d1-0709-4e77-a10b-05ab87d45924" />
 
-Use your original Figure 13.
+Figure 6.2. John the Ripper confirming successful offline password recovery from the retrieved AS-REP hashFigure 6. Impacket GetNPUsers retrieving an AS-REP hash from the target domain
 
-Suggested caption:
-
-> Offline password recovery using John the Ripper.
-
----
 
 # 7. Web Application Exploitation and Remote Command Execution
 
@@ -351,49 +350,23 @@ This exercise demonstrated the combined risk created by:
 - Remote command execution
 - Windows privilege identification
 
-### Screenshot 1
+### Screenshot(s)
 
-ADD SCREENSHOT HERE
+<img width="632" height="493" alt="Screenshot 2026-09-11 at 15 35 25" src="https://github.com/user-attachments/assets/eb6b5f9a-320f-448c-b08a-f47e39999184" />
 
-Use your original screenshot showing successful CMS authentication.
+Figure 7.1. Sitemagic CMS web application identified on the target web server
 
-Suggested caption:
+<img width="457" height="232" alt="Figure 7 2  Authenticated access to the Sitemagic CMS using recovered credentials" src="https://github.com/user-attachments/assets/a17e6883-4d95-4a85-8529-f757ab2b5b07" />
 
-> Authenticated access to the Sitemagic CMS using credentials recovered during earlier testing.
+Figure 7.2. Authenticated access to the Sitemagic CMS using recovered credentials
 
-### Screenshot 2
+<img width="632" height="493" alt="Screenshot 2026-09-11 at 15 35 25" src="https://github.com/user-attachments/assets/9cde5c1b-ef4a-4a32-a693-6f4202a3ccd8" />
 
-ADD SCREENSHOT HERE
+Figure 7.3. PHP command shell created in Kali for controlled remote command execution testing
 
-Use the screenshot showing `shell.php` being created.
 
-Suggested caption:
 
-> Controlled PHP command shell created for testing within the authorised lab.
 
-### Screenshot 3
-
-ADD SCREENSHOT HERE
-
-Use the screenshot showing the file uploaded to the CMS.
-
-Suggested caption:
-
-> PHP test file uploaded through the CMS file manager.
-
-### Screenshot 4
-
-ADD SCREENSHOT HERE
-
-Use the screenshot where `whoami` returns:
-
-`nt authority\system`
-
-Suggested caption:
-
-> Remote command execution confirmed using `whoami`, showing SYSTEM-level execution.
-
----
 
 # 8. Post-Exploitation
 

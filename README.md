@@ -129,15 +129,8 @@ Identifying software versions is important because it allows a penetration teste
 
 ### Screenshot
 
-ADD SCREENSHOT HERE
+<img width="635" height="201" alt="Figure 2  Nmap service version detection identifying Apache HTTP Server 2 4 46" src="https://github.com/user-attachments/assets/65852042-899c-470d-8ec7-23c9873d7f9f" />
 
-Use your original Figure 4.
-
-Suggested caption:
-
-> Nmap service version detection identifying Apache HTTP Server 2.4.46.
-
----
 
 ## 3. Operating System Fingerprinting
 
@@ -171,15 +164,8 @@ The result was fingerprint-based and Nmap noted that the result may not have bee
 
 ### Screenshot
 
-ADD SCREENSHOT HERE
+<img width="628" height="437" alt="Figure 3  Nmap operating system fingerprinting indicating Windows Server 2012 R2" src="https://github.com/user-attachments/assets/5963ae1d-f144-48df-bb87-6be086acb15d" />
 
-Use your original Figure 6.
-
-Suggested caption:
-
-> Nmap OS fingerprinting indicating a Windows Server 2012 R2 environment.
-
----
 
 ## 4. Content Management System Identification
 
@@ -213,15 +199,8 @@ This demonstrated how application-level information can be gathered using target
 
 ### Screenshot
 
-ADD SCREENSHOT HERE
+<img width="628" height="289" alt="Figure 4  Nmap NSE enumeration identifying the Sitemagic CMS platform" src="https://github.com/user-attachments/assets/d6296b07-3b05-4526-8fda-6d902e9ebe48" />
 
-Use your original Figure 8.
-
-Suggested caption:
-
-> Nmap NSE identifying the Sitemagic content management system.
-
----
 
 ## 5. SMB and Active Directory Enumeration
 
@@ -256,15 +235,8 @@ The Active Directory domain information became particularly useful during the cr
 
 ### Screenshot
 
-ADD SCREENSHOT HERE
+<img width="628" height="422" alt="Figure 5  SMB enumeration identifying the CyberQ local Active Directory domain" src="https://github.com/user-attachments/assets/09abba29-b08e-44be-b2a2-23fe369b3e9e" />
 
-Use your original Figure 10.
-
-Suggested caption:
-
-> SMB enumeration revealing computer name and Active Directory domain information.
-
----
 
 # 6. Kerberos AS-REP Roasting
 
@@ -307,12 +279,7 @@ The attack demonstrated how an Active Directory account configured without Kerbe
 
 ### Screenshot 1
 
-ADD SCREENSHOT HERE
-
-Use your original Figure 12.
-
-Suggested caption:
-
+<img width="628" height="161" alt="Figure 6  Impacket GetNPUsers retrieving an AS-REP hash from the target domain" src="https://github.com/user-attachments/assets/71cba542-c9bd-442d-b4b6-0d8d37128d03" />
 > Impacket GetNPUsers retrieving an AS-REP hash from an account without Kerberos pre-authentication.
 
 ### Screenshot 2

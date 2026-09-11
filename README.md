@@ -94,7 +94,7 @@ This information provided the foundation for more targeted service enumeration.
 ### Screenshot
 
 <img width="431" height="562" alt="Figure 1  Nmap full TCP port scan identifying open services on target 10 10 1 22" src="https://github.com/user-attachments/assets/8170dad5-52b4-46cc-b62b-72670107ba03" />
-
+Figure 1. Nmap full TCP port scan identifying open services on target 10.10.1.22
 
 ## 2. Web Service Version Detection
 

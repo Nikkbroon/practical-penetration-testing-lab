@@ -427,13 +427,10 @@ These results were used to focus subsequent enumeration on the exposed services.
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+ <img width="679" height="243" alt="Screenshot 2026-09-21 at 15 13 47" src="https://github.com/user-attachments/assets/761176c2-85c0-4228-8885-df547f7a8a03" />
 
-Use your original Figure 21.
+ Figure 1. Nmap full TCP scan identifying ports 5985 and 8080 as open on target 10.10.1.24
 
-Suggested caption:
-
-> Full TCP scan showing confirmed open services on the Windows lab target.
 
 ---
 
@@ -457,9 +454,9 @@ This information allowed more focused investigation of the Tomcat management int
 
 ### Evidence
 
-<img width="631" height="233" alt="Screenshot 2026-09-21 at 14 16 07" src="https://github.com/user-attachments/assets/03ccc70b-5c86-4f47-8c1c-ec65ced05fae" />
+<img width="677" height="251" alt="Screenshot 2026-09-21 at 15 14 34" src="https://github.com/user-attachments/assets/9829a4e4-c267-42b4-8edf-71c16bc65b3e" />
 
-Figure 1. Nmap full TCP scan identifying ports 5985 and 8080 as open on target 10.10.1.24
+Figure 2. Nmap service version detection identifying Apache Tomcat 9.0.37 on TCP port 8080
 
 ---
 

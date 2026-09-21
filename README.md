@@ -360,12 +360,9 @@ Figure 7.1. Sitemagic CMS web application identified on the target web server
 
 Figure 7.2. Authenticated access to the Sitemagic CMS using recovered credentials
 
-<img width="632" height="493" alt="Screenshot 2026-09-11 at 15 35 25" src="https://github.com/user-attachments/assets/9cde5c1b-ef4a-4a32-a693-6f4202a3ccd8" />
+<img width="451" height="103" alt="Screenshot 2026-09-21 at 15 11 08" src="https://github.com/user-attachments/assets/9083307c-08f4-41cf-b5b9-72949ec0800f" />
 
 Figure 7.3. PHP command shell created in Kali for controlled remote command execution testing
-
-
-
 
 
 # 8. Post-Exploitation

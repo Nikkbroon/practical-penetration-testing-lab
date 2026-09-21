@@ -393,13 +393,9 @@ This demonstrated the potential impact of the compromise beyond initial web appl
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+<img width="635" height="155" alt="Screenshot 2026-09-21 at 14 15 09" src="https://github.com/user-attachments/assets/293335db-42be-4597-9f2e-b667b4c5ad59" />
 
-Use your original Figure 19, but crop out the OU question/answer interface.
-
-Suggested caption:
-
-> Post-exploitation access demonstrating retrieval of data from a privileged Windows account.
+Figure 8. Post-exploitation access demonstrating retrieval of the protected Administrator file
 
 ---
 
@@ -464,13 +460,9 @@ This information allowed more focused investigation of the Tomcat management int
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+<img width="631" height="233" alt="Screenshot 2026-09-21 at 14 16 07" src="https://github.com/user-attachments/assets/03ccc70b-5c86-4f47-8c1c-ec65ced05fae" />
 
-Use your original Figure 23.
-
-Suggested caption:
-
-> Nmap service enumeration identifying Apache Tomcat 9.0.37 on TCP port 8080.
+Figure 1. Nmap full TCP scan identifying ports 5985 and 8080 as open on target 10.10.1.24
 
 ---
 
@@ -529,50 +521,35 @@ cloud\jack
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+<img width="631" height="390" alt="Screenshot 2026-09-21 at 14 18 03" src="https://github.com/user-attachments/assets/880aad02-5935-4550-a1a2-fe8b8c46d9bc" />
 
-Use your original Figure 30.
-
-Suggested caption:
-
-> Metasploit search identifying the Tomcat Manager upload module.
-
-
-ADD SCREENSHOT HERE
-
-Use Figure 32.
-
-Suggested caption:
-
-> Tomcat Manager authentication testing identifying valid default credentials.
+Figure 3.1. Metasploit search identifying the Apache Tomcat Manager upload exploit module
 
 
 
-ADD SCREENSHOT HERE
+<img width="628" height="534" alt="Screenshot 2026-09-21 at 14 18 57" src="https://github.com/user-attachments/assets/95723aa1-13f6-48fe-86c4-b61968f6703c" />
 
-Use Figure 33.
-
-Suggested caption:
-
-> Configured Metasploit Tomcat Manager exploitation module.
+Figure 3.2. Initial Metasploit Tomcat Manager exploit configuration during testing
 
 
-ADD SCREENSHOT HERE
+<img width="635" height="526" alt="Screenshot 2026-09-21 at 14 19 35" src="https://github.com/user-attachments/assets/465235a3-5b0c-4cf2-95b2-f0123b87d1ed" />
 
-Use Figure 34.
-
-Suggested caption:
-
-> Successful Meterpreter session established following controlled Tomcat exploitation.
+Figure 3.3. Tomcat Manager authentication testing confirming valid default credentials
 
 
-ADD SCREENSHOT HERE
+<img width="629" height="522" alt="Screenshot 2026-09-21 at 14 20 19" src="https://github.com/user-attachments/assets/da6a5fe8-b7a9-4f9f-8b0d-a32e82527303" />
 
-Use Figure 35.
+Figure 3.4. Corrected Metasploit Tomcat Manager exploit configuration with target and payload settings
 
-Suggested caption:
 
-> Post-exploitation enumeration confirming the compromised Windows user context.
+<img width="629" height="539" alt="Screenshot 2026-09-21 at 14 20 59" src="https://github.com/user-attachments/assets/d85e12fa-c044-4f56-8900-0bf4e34dfc01" />
+
+Figure 3.5. Successful Meterpreter session established through Apache Tomcat exploitation
+
+<img width="631" height="527" alt="Screenshot 2026-09-21 at 14 21 34" src="https://github.com/user-attachments/assets/18cdfb88-f50f-44bd-a4f4-735c783b87a8" />
+
+Figure 3.6. Post-exploitation enumeration confirming the compromised Windows user context and locating user.txt
+
 
 ---
 
@@ -598,13 +575,9 @@ The file could then be read through the established shell.
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+<img width="632" height="85" alt="Screenshot 2026-09-21 at 14 22 18" src="https://github.com/user-attachments/assets/a03e634e-b11c-40d4-adea-184d0cb0b99b" />
 
-Use your original Figure 37.
-
-Suggested caption:
-
-> Post-exploitation file access through the established Meterpreter session.
+Figure 4. Post-exploitation file access through the established Meterpreter session
 
 ---
 
@@ -644,23 +617,16 @@ was identified.
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+<img width="634" height="425" alt="Screenshot 2026-09-21 at 14 23 08" src="https://github.com/user-attachments/assets/ecfa51f9-7123-44b2-b022-b508eb09c5e8" />
 
-Use Figure 39.
-
-Suggested caption:
-
-> Windows filesystem enumeration identifying the installed CloudMe application.
+Figure 5.1. Windows filesystem enumeration identifying the installed CloudMe application
 
 
-ADD SCREENSHOT HERE
+<img width="634" height="340" alt="Screenshot 2026-09-21 at 14 23 51" src="https://github.com/user-attachments/assets/e847a502-7169-4323-a474-ca6fbfd7ca19" />
 
-Use Figure 40.
+Figure 5.2. CloudMe licence information confirming CloudMe Sync version 1.11.0
 
-Suggested caption:
-
-> Application version identification through inspection of CloudMe licence information.
-
+****
 ---
 
 # 6. Vulnerability Research with SearchSploit
@@ -704,13 +670,9 @@ Exploit Validation
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+<img width="628" height="316" alt="Screenshot 2026-09-21 at 14 24 51" src="https://github.com/user-attachments/assets/814f8117-4e67-4e6d-ab96-d3a07a7c49db" />
 
-Use your original Figure 42.
-
-Suggested caption:
-
-> SearchSploit identifying a local buffer overflow affecting CloudMe Sync 1.11.0.
+Figure 6. SearchSploit identifying a local buffer overflow affecting CloudMe Sync 1.11.0
 
 ---
 
@@ -765,53 +727,34 @@ cloud\administrator
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+<img width="633" height="120" alt="Screenshot 2026-09-21 at 14 25 46" src="https://github.com/user-attachments/assets/662e36cf-268e-40f9-a026-74c66c4a097c" />
 
-Use Figure 44.
-
-Suggested caption:
-
-> CloudMe exploit preparation on the Kali attack system.
+Figure 7.1. CloudMe exploit and reverse-shell payload prepared on the Kali attack system
 
 
+<img width="447" height="556" alt="Screenshot 2026-09-21 at 14 27 09" src="https://github.com/user-attachments/assets/532479a1-3e11-4200-a7b8-932f06516d27" />
 
-ADD SCREENSHOT HERE
-
-Use Figure 45.
-
-Suggested caption:
-
-> Modified exploit containing the generated reverse-shell payload.
+Figure 7.2. CloudMe exploit modified to include the generated reverse-shell payload
 
 
+<img width="285" height="124" alt="Screenshot 2026-09-21 at 14 27 44" src="https://github.com/user-attachments/assets/1685cbc1-d17f-43c4-87c8-52170bb23c1c" />
 
-ADD SCREENSHOT HERE
-
-Use Figure 46.
-
-Suggested caption:
-
-> Netcat listener prepared to receive the reverse connection.
+Figure 7.3. Netcat listener configured on Kali to receive the reverse-shell connection
 
 
+<img width="452" height="178" alt="Screenshot 2026-09-21 at 14 28 26" src="https://github.com/user-attachments/assets/f1813b65-bb87-4050-bf10-06030768d73f" />
 
-ADD SCREENSHOT HERE
-
-Use Figure 47.
-
-Suggested caption:
-
-> Exploit transferred to the compromised Windows system using the existing Meterpreter session.
+Figure 7.4. Modified CloudMe exploit transferred to the compromised Windows target through Meterpreter
 
 
+<img width="450" height="272" alt="Screenshot 2026-09-21 at 14 29 11" src="https://github.com/user-attachments/assets/a4c7bc2b-d0f4-43bd-b87e-efe21752aac0" />
 
-ADD SCREENSHOT HERE
+Figure 7.5. Reverse shell successfully established with cloud\administrator privileges
 
-Use Figure 48.
 
-Suggested caption:
+<img width="448" height="374" alt="Screenshot 2026-09-21 at 14 29 34" src="https://github.com/user-attachments/assets/b335b4d3-31a3-4c09-a021-f9a38eec10f2" />
 
-> Reverse shell successfully received with Administrator-level privileges.
+Figure 7.6. Administrator-level filesystem enumeration locating the protected root.txt file
 
 ---
 
@@ -823,13 +766,10 @@ This confirmed that successful privilege escalation had significantly increased 
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+<img width="445" height="77" alt="Screenshot 2026-09-21 at 14 30 25" src="https://github.com/user-attachments/assets/05f5648c-23e1-4034-b708-f713c1fd5140" />
 
-Use your original Figure 51.
+Figure 8. Privileged post-exploitation access demonstrating successful retrieval of the Administrator-level file
 
-Suggested caption:
-
-> Privileged post-exploitation access following successful Windows privilege escalation.
 
 ---
 
@@ -865,13 +805,9 @@ The target system was identified among the live hosts on the laboratory subnet.
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+<img width="448" height="387" alt="Screenshot 2026-09-21 at 14 31 06" src="https://github.com/user-attachments/assets/e6f9bb57-70e3-40bb-b989-9ce9d26c000e" />
 
-Use your original Figure 53.
-
-Suggested caption:
-
-> Nmap host discovery identifying live systems within the authorised laboratory subnet.
+Figure 1. Kali network configuration and Nmap host discovery identifying live systems within the authorised lab subnet
 
 ---
 
@@ -905,23 +841,9 @@ Apache httpd 2.4.29
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+<img width="454" height="459" alt="Screenshot 2026-09-21 at 14 32 40" src="https://github.com/user-attachments/assets/8fefe4ce-8cb5-4330-b6f8-635b366a7c84" />
 
-Use Figure 54.
-
-Suggested caption:
-
-> Full TCP scan identifying SSH and HTTP services.
-
-
-
-ADD SCREENSHOT HERE
-
-Use Figure 55.
-
-Suggested caption:
-
-> Nmap service version detection identifying OpenSSH and Apache.
+Figure 2. Nmap full TCP port scan identifying SSH and HTTP services on target 10.10.1.32
 
 ---
 
@@ -939,13 +861,9 @@ pageid
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+<img width="453" height="420" alt="Screenshot 2026-09-21 at 14 33 42" src="https://github.com/user-attachments/assets/91e8fa8f-bf53-4833-be5c-4b1b447f524d" />
 
-Use your original Figure 61.
-
-Suggested caption:
-
-> Captured HTTP request identifying the `pageid` GET parameter for further testing.
+Figure 3. Nmap service enumeration confirming Apache HTTP Server 2.4.29 on TCP port 80
 
 ---
 
@@ -982,22 +900,18 @@ The backend database was identified as MySQL.
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+<img width="453" height="292" alt="Screenshot 2026-09-21 at 14 34 28" src="https://github.com/user-attachments/assets/d88604b3-808c-4972-b591-3988c1ad885f" />
 
-Use Figure 62.
+Figure 4.1. HTTP request identifying the pageid GET parameter for SQL injection testing
 
-Suggested caption:
+<img width="453" height="329" alt="Screenshot 2026-09-21 at 14 35 26" src="https://github.com/user-attachments/assets/916c2d20-4a5d-4123-968b-db72368a75ca" />
 
-> SQLMap testing the `pageid` GET parameter.
+Figure 4.2. SQLMap analysing the captured request and testing the pageid parameter for SQL injection
 
+<img width="450" height="210" alt="Screenshot 2026-09-21 at 14 35 54" src="https://github.com/user-attachments/assets/9d5f41e1-0aa0-432a-9392-233c7283e845" />
 
-ADD SCREENSHOT HERE
+Figure 4.3. SQLMap confirming multiple SQL injection techniques against the vulnerable pageid parameter
 
-Use Figure 63.
-
-Suggested caption:
-
-> SQLMap confirming multiple SQL injection techniques against the vulnerable parameter.
 
 ---
 
@@ -1050,33 +964,19 @@ SSH Access
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+<img width="453" height="300" alt="Screenshot 2026-09-21 at 14 36 36" src="https://github.com/user-attachments/assets/f015c77a-2e34-452a-b765-06ef05f2b4d1" />
 
-Use Figure 65.
+Figure 5.1. Hashcat configured for offline cracking of the recovered MD5 password hash
 
-Suggested caption:
+<img width="451" height="510" alt="Screenshot 2026-09-21 at 14 37 09" src="https://github.com/user-attachments/assets/8ed8d709-57f3-4db8-9e28-cd8c7f0a32be" />
 
-> Hashcat configured to perform offline password recovery against the extracted MD5 hash.
-
-
-
-ADD SCREENSHOT HERE
-
-Use Figure 66.
-
-Suggested caption:
-
-> Successful password recovery using Hashcat.
+Figure 5.2. Hashcat confirming successful recovery of the plaintext password
 
 
+<img width="451" height="551" alt="Screenshot 2026-09-21 at 14 37 49" src="https://github.com/user-attachments/assets/93870b5f-903f-4e0c-bb8e-8e8655b2d884" />
 
-ADD SCREENSHOT HERE
+Figure 5.3. Successful SSH authentication using the recovered credentials
 
-Use Figure 67.
-
-Suggested caption:
-
-> Credentials validated through successful SSH authentication.
 
 ---
 
@@ -1092,13 +992,9 @@ This provided further context about the target environment and demonstrated how 
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+<img width="451" height="552" alt="Screenshot 2026-09-21 at 14 38 32" src="https://github.com/user-attachments/assets/ef1fc5ac-aae9-472e-b0ba-70d44ee896e4" />
 
-Use your Experience 3 Challenge 6 SSH screenshot.
-
-Suggested caption:
-
-> Authenticated SSH session revealing the Ubuntu operating system version.
+Figure 6. Authenticated SSH session identifying the target as Ubuntu 18.04.4 LTS
 
 ---
 
@@ -1127,13 +1023,10 @@ cat /home/cyberq_user/user.txt
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+<img width="447" height="422" alt="Screenshot 2026-09-21 at 14 39 09" src="https://github.com/user-attachments/assets/3bdfc481-a3be-4db3-96b9-58745f9f0c0e" />
 
-Use your original Figure 71.
+Figure 7. Linux filesystem enumeration locating and reading the user-level file
 
-Suggested caption:
-
-> Linux post-exploitation enumeration locating and reading the user-level target file.
 
 ---
 
@@ -1173,23 +1066,14 @@ This demonstrated how poor sudo configuration can provide a direct vertical priv
 
 ### Evidence
 
-ADD SCREENSHOT HERE
+<img width="451" height="460" alt="Screenshot 2026-09-21 at 14 39 47" src="https://github.com/user-attachments/assets/a1a54fe9-8241-4129-88c0-747e7c0af5fd" />
 
-Use your original Figure 73.
+Figure 8.1. Sudo enumeration identifying that the compromised user can execute Nano with root privileges
 
-Suggested caption:
+<img width="449" height="220" alt="Screenshot 2026-09-21 at 14 40 15" src="https://github.com/user-attachments/assets/0f370699-c739-4f03-be10-6ff1f78d67e3" />
 
-> `sudo -l` revealing an overly permissive sudo configuration.
+Figure 8.2. Root-level file access through the permitted Nano sudo configuration
 
-
-
-ADD SCREENSHOT HERE
-
-Use Figure 74.
-
-Suggested caption:
-
-> Root-level file access demonstrating successful Linux privilege escalation.
 
 ---
 

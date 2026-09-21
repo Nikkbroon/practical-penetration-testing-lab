@@ -164,7 +164,7 @@ The result was fingerprint-based and Nmap noted that the result may not have bee
 - Interpretation of scan confidence
 - Windows infrastructure reconnaissance
 
-### Screenshot
+### Evidence 
 
 <img width="628" height="437" alt="Figure 3  Nmap operating system fingerprinting indicating Windows Server 2012 R2" src="https://github.com/user-attachments/assets/5963ae1d-f144-48df-bb87-6be086acb15d" />
 
@@ -200,7 +200,7 @@ This demonstrated how application-level information can be gathered using target
 - Web application enumeration
 - CMS fingerprinting
 
-### Screenshot
+### Evidence
 
 <img width="628" height="289" alt="Figure 4  Nmap NSE enumeration identifying the Sitemagic CMS platform" src="https://github.com/user-attachments/assets/d6296b07-3b05-4526-8fda-6d902e9ebe48" />
 
@@ -237,7 +237,7 @@ The Active Directory domain information became particularly useful during the cr
 - Domain identification
 - NSE scripting
 
-### Screenshot
+### Evidence
 
 <img width="628" height="422" alt="Figure 5  SMB enumeration identifying the CyberQ local Active Directory domain" src="https://github.com/user-attachments/assets/09abba29-b08e-44be-b2a2-23fe369b3e9e" />
 
@@ -282,7 +282,7 @@ The attack demonstrated how an Active Directory account configured without Kerbe
 - Impacket
 - John the Ripper
 
-### Screenshot 1
+### Evidence
 
 <img width="628" height="161" alt="Figure 6  Impacket GetNPUsers retrieving an AS-REP hash from the target domain" src="https://github.com/user-attachments/assets/71cba542-c9bd-442d-b4b6-0d8d37128d03" />
 
@@ -350,7 +350,7 @@ This exercise demonstrated the combined risk created by:
 - Remote command execution
 - Windows privilege identification
 
-### Screenshot(s)
+### Evidence
 
 <img width="632" height="493" alt="Screenshot 2026-09-11 at 15 35 25" src="https://github.com/user-attachments/assets/eb6b5f9a-320f-448c-b08a-f47e39999184" />
 
@@ -391,7 +391,7 @@ This demonstrated the potential impact of the compromise beyond initial web appl
 - Privilege validation
 - Impact assessment
 
-### Screenshot
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -432,7 +432,7 @@ The scan identified:
 
 These results were used to focus subsequent enumeration on the exposed services.
 
-### Screenshot
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -462,7 +462,7 @@ Apache Tomcat 9.0.37
 
 This information allowed more focused investigation of the Tomcat management interface.
 
-### Screenshot
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -527,7 +527,7 @@ cloud\jack
 - Meterpreter
 - Remote access
 
-### Screenshot 1
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -537,7 +537,6 @@ Suggested caption:
 
 > Metasploit search identifying the Tomcat Manager upload module.
 
-### Screenshot 2
 
 ADD SCREENSHOT HERE
 
@@ -547,7 +546,7 @@ Suggested caption:
 
 > Tomcat Manager authentication testing identifying valid default credentials.
 
-### Screenshot 3
+
 
 ADD SCREENSHOT HERE
 
@@ -557,7 +556,6 @@ Suggested caption:
 
 > Configured Metasploit Tomcat Manager exploitation module.
 
-### Screenshot 4
 
 ADD SCREENSHOT HERE
 
@@ -567,7 +565,6 @@ Suggested caption:
 
 > Successful Meterpreter session established following controlled Tomcat exploitation.
 
-### Screenshot 5
 
 ADD SCREENSHOT HERE
 
@@ -599,7 +596,7 @@ The file could then be read through the established shell.
 - Windows filesystem enumeration
 - Remote shell operation
 
-### Screenshot
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -645,7 +642,7 @@ CloudMe Sync version:
 
 was identified.
 
-### Screenshot 1
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -655,7 +652,6 @@ Suggested caption:
 
 > Windows filesystem enumeration identifying the installed CloudMe application.
 
-### Screenshot 2
 
 ADD SCREENSHOT HERE
 
@@ -706,7 +702,7 @@ Exploit Validation
 - Version correlation
 - Vulnerability identification
 
-### Screenshot
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -767,7 +763,7 @@ cloud\administrator
 - Payload generation
 - Post-exploitation
 
-### Screenshot 1
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -777,7 +773,7 @@ Suggested caption:
 
 > CloudMe exploit preparation on the Kali attack system.
 
-### Screenshot 2
+
 
 ADD SCREENSHOT HERE
 
@@ -787,7 +783,7 @@ Suggested caption:
 
 > Modified exploit containing the generated reverse-shell payload.
 
-### Screenshot 3
+
 
 ADD SCREENSHOT HERE
 
@@ -797,7 +793,7 @@ Suggested caption:
 
 > Netcat listener prepared to receive the reverse connection.
 
-### Screenshot 4
+
 
 ADD SCREENSHOT HERE
 
@@ -807,7 +803,7 @@ Suggested caption:
 
 > Exploit transferred to the compromised Windows system using the existing Meterpreter session.
 
-### Screenshot 5
+
 
 ADD SCREENSHOT HERE
 
@@ -825,7 +821,7 @@ Administrator-level access allowed protected system resources to be accessed.
 
 This confirmed that successful privilege escalation had significantly increased the impact of the original compromise.
 
-### Screenshot
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -867,7 +863,7 @@ The `-sn` option performs host discovery without a full port scan.
 
 The target system was identified among the live hosts on the laboratory subnet.
 
-### Screenshot
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -907,7 +903,7 @@ OpenSSH 7.6p1
 Apache httpd 2.4.29
 ```
 
-### Screenshot 1
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -917,7 +913,7 @@ Suggested caption:
 
 > Full TCP scan identifying SSH and HTTP services.
 
-### Screenshot 2
+
 
 ADD SCREENSHOT HERE
 
@@ -941,7 +937,7 @@ A request included the parameter:
 pageid
 ```
 
-### Screenshot
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -984,7 +980,7 @@ The backend database was identified as MySQL.
 - Request analysis
 - Database fingerprinting
 
-### Screenshot 1
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -994,7 +990,6 @@ Suggested caption:
 
 > SQLMap testing the `pageid` GET parameter.
 
-### Screenshot 2
 
 ADD SCREENSHOT HERE
 
@@ -1053,7 +1048,7 @@ SSH Access
 - Credential validation
 - SSH
 
-### Screenshot 1
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -1063,7 +1058,7 @@ Suggested caption:
 
 > Hashcat configured to perform offline password recovery against the extracted MD5 hash.
 
-### Screenshot 2
+
 
 ADD SCREENSHOT HERE
 
@@ -1073,7 +1068,7 @@ Suggested caption:
 
 > Successful password recovery using Hashcat.
 
-### Screenshot 3
+
 
 ADD SCREENSHOT HERE
 
@@ -1095,7 +1090,7 @@ Ubuntu 18.04.4 LTS
 
 This provided further context about the target environment and demonstrated how authenticated access can reveal information that may not always be available through remote fingerprinting.
 
-### Screenshot
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -1130,7 +1125,7 @@ cat /home/cyberq_user/user.txt
 - Post-exploitation
 - Command-line proficiency
 
-### Screenshot
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -1176,7 +1171,7 @@ This demonstrated how poor sudo configuration can provide a direct vertical priv
 - Linux permissions
 - Post-exploitation
 
-### Screenshot 1
+### Evidence
 
 ADD SCREENSHOT HERE
 
@@ -1186,7 +1181,7 @@ Suggested caption:
 
 > `sudo -l` revealing an overly permissive sudo configuration.
 
-### Screenshot 2
+
 
 ADD SCREENSHOT HERE
 
